@@ -1,17 +1,19 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from '../../heros/hooks/useForms';
-import { UserContext } from '../context/UserContext';
+import { AuthContext } from '../context/AuthContext';
 
 export const LoginPage = () => {
 
+  const { loginUser } = useContext( AuthContext );
+  // console.log(cont);
+  const { name, email, onInputChange } = useForm({ name:'', email:'' });
+  
   const navigate = useNavigate();
 
-  const { loginUser } = useContext( UserContext );
-  const { name, email, onInputChange } = useForm({ name:'', email:'' });
 
   const onLogin = () => {
-    loginUser( { name: name, email: email } );
+    loginUser( name, email );
     navigate( '/marvel', {
       replace: true
     })
