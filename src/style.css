@@ -1,0 +1,213 @@
+:root {
+  --green: #38EF7D;
+  --blue-dark: #0A2E36;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-image: url('/assets/background-pages.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  top: 1.5rem;
+  left: 2.5rem;
+  width: calc(100% - 5rem);
+  z-index: 99;
+  padding: 0.5rem 2rem;
+}
+
+.bg-navbar{
+  background: rgba(10, 46, 54, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  color: #FFF;
+}
+
+.navbar .nav-link.active {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.container-page > .container {
+  margin-top: 8rem;
+}
+
+.navbar .name-user strong{
+  font-weight: 700;
+  color: var(--green);
+}
+
+.info-publisher img { 
+  max-width: 180px;
+}
+
+.info-publisher h1 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.card-hero {
+  position: relative;
+}
+
+.content-hero-card:after {
+  content: '';
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #000000 104%);
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-hero:hover .content-hero-card:after {
+  height: 250px;
+}
+
+.info-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
+  width: 100%;
+  z-index: 9;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-hero:hover .info-hero{
+  bottom: 1rem;
+}
+
+.info-hero h2 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.info-hero p,
+.content-search p {
+  color: #FFF;
+}
+
+.content-hero-card .badge {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.badge-dc-comics{
+  background-color: #0376F2;
+}
+
+.badge-marvel-comics{
+  background-color: #EB1D25;
+  ;
+}
+
+.content-search h1 {
+  font-weight: 700;
+}
+
+.form-search input {
+  transform: translateX(4rem);
+  z-index: 2;
+  padding-right: 4rem;
+  position: relative;
+  border: 1px solid #FFF;
+  background-color: transparent;
+  color: #FFF;
+}
+
+.form-search input:focus {
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid var(--green);
+}
+
+.form-search input::placeholder{
+  color: #FFF;
+}
+
+.form-search button,
+.btn-login {
+  z-index: 9;
+  position: relative;
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  font-weight: 700;
+  color: #FFF;
+}
+
+.form-search button:hover,
+.btn-login:hover {
+  background-color: #29d76c;
+  border: 1px solid #29d76c;
+  color: #FFF;
+}
+
+.not-found-heros h2,
+.not-found-heros p,
+.login-row h1,
+.login-row p {
+  color: var(--blue-dark);
+}
+
+.login-row {
+  height: 100vh;
+}
+
+.logo-fm {
+  max-width: 200px;
+}
+
+.left-login {
+  padding: 6rem 7rem;
+}
+
+.login-form-content h1 {
+  font-weight: 700;
+}
+
+.right-login {
+  background: url('assets/back-login.jpg');
+}
+
+.right-login img {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.form-login input {
+  border: 1px solid #E5E5E5;
+  background-color: transparent;
+  color: #ADADAD;
+}
+
+.form-login input:focus {
+  background-color: transparent;
+  color: #ADADAD;
+  border: 1px solid var(--green);
+}
+
+.form-login input::placeholder{
+  color: #ADADAD;
+}
+
+.legal-login {
+  font-size: 0.8rem;
+  font-style: italic;
+}
