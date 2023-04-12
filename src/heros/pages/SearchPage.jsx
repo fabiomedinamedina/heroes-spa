@@ -24,9 +24,9 @@ export const SearchPage = () => {
   return (
     <>
 
-      <div className="container-title-publisher  animate__animated animate__fadeIn">
+      <div className="container container-title-publisher  animate__animated animate__fadeIn">
         <div
-          className="content-search p-5 d-flex justify-content-between align-items-end rounded-4 mb-5"
+          className="content-search p-4 p-lg-5 d-flex justify-content-between align-items-end rounded-4 mb-5"
           style={{
             backgroundImage: `url(assets/titles/background-search.jpg)`,
             backgroundRepeat: 'no-repeat',
@@ -35,7 +35,7 @@ export const SearchPage = () => {
         >
          <div className="container">
          <div className="row align-items-end">
-            <div className="col-6">
+            <div className="col-12 col-lg-6">
                 <div className="info-publisher">
                 <img
                   src={ `assets/titles/logos-dc-marvel.svg` } 
@@ -46,8 +46,8 @@ export const SearchPage = () => {
                 <p className='mb-0'>Escribe el nombre del héroe que quieres buscar. Recuerda que debes escribir más de 3 caracteres</p>
               </div>
             </div>
-            <div className="col-6">
-                <form className="form-search d-flex justify-content-end pb-2" onSubmit={ onSearchSubmit }>
+            <div className="col-12 col-lg-6">
+                <form className="form-search d-flex flex-column flex-lg-row justify-content-end flex-column pb-2 pt-3 pt-lg-0" onSubmit={ onSearchSubmit }>
                 <div className="col-auto mt-0">
                   <input
                     type="text"
@@ -62,7 +62,7 @@ export const SearchPage = () => {
                 <div className="col-auto mt-0 mb-0">
                   <button
                     type="submit"
-                    className="btn rounded-pill px-4"
+                    className="btn rounded-pill px-4 mt-2 mt-lg-0"
                   >
                     Buscar Héroes
                   </button>
@@ -73,15 +73,17 @@ export const SearchPage = () => {
          </div>
         </div>
       </div>
-      <div className="row results-heros animate__animated animate__fadeIn">
-        {
-          ( heros.length === 0 && q !== '' ) && <NotFoundHeros />
-        }
-        {
-          heros.map( (hero) => (
-            <HeroItem key={ hero.id } { ...hero } />
-          ))
-        }
+      <div className="container">
+        <div className="row results-heros animate__animated animate__fadeIn g-3">
+          {
+            ( heros.length === 0 && q !== '' ) && <NotFoundHeros />
+          }
+          {
+            heros.map( (hero) => (
+              <HeroItem key={ hero.id } { ...hero } />
+            ))
+          }
+        </div>
       </div>
     </>
   );

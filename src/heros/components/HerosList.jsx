@@ -15,7 +15,7 @@ export function HerosList( {publisher} ) {
         </div>
       </div>
       <div className="container  animate__animated animate__fadeInUp">
-        <div className="row">
+        <div className="row g-3">
           {
             heros.map( ( hero ) =>(
             <HeroItem

@@ -24,11 +24,11 @@ export const LoginPage = () => {
   return (
 
     <div className="login-row row g-0 ">
-      <div className="col-6 left-login h-100 d-flex flex-column justify-content-between">
+      <div className="col-12 col-lg-6  order-1 order-lg-0 left-login h-100 d-flex flex-column justify-content-between">
         <a href="https://fabiomedina.com" target='_blank'>
         <img
           src="/assets/logo-fabiomedina.svg" alt="Logo Fabio Medina"
-          className='logo-fm'
+          className='logo-fm pb-5 pb-lg-0'
         />
         </a>
         <div className="login-form-content">
@@ -68,7 +68,7 @@ export const LoginPage = () => {
         </div>
         <p><small>©2023 Todos los derechos reservados. Fabio Medina Medina</small></p>
       </div>
-      <div className="col-6 right-login h-100 d-flex flex-column justify-content-center text-center p-5">
+      <div className="col-12 col-lg-6 order-0 order-lg-1 right-login h-100 d-flex flex-column justify-content-center text-center p-3 p-lg-5 px-5">
         <img src="/assets/heroes-login.png" alt="Heroes DC y Marvel" />
       </div>
     </div>
