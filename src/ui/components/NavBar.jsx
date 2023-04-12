@@ -18,8 +18,10 @@ export const NavBar = () => {
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-navbar rounded-pill">
-      <img src="/favicon.png" alt="Fabio Medina" height="30" />
-      <span className="navbar-brand ms-2 mb-0 h1">Fabio Medina App</span>
+      <a href="https://fabiomedina.com" target="blank">
+        <img src="/favicon.png" alt="Fabio Medina" height="30" />
+      </a>
+      <span className="navbar-brand ms-2 mb-0 h1">Héroes App <small>(by Fabio Medina)</small></span>
       <button
         className="navbar-toggler"
         type="button"
