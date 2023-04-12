@@ -27,22 +27,14 @@ export const AuthProvider = ({ children }) => {
       name: name,
       email: email,
     };
-    const action = {
-      type: types.login,
-      payload: user,
-    };
-
+    const action = { type: types.login,  payload: user, };
     localStorage.setItem("user", JSON.stringify(user));
-
     authDispatch(action);
   };
 
   const logoutUser = () => {
-    const action = {
-      type: types.logout,
-    };
     localStorage.removeItem("user");
-    authDispatch(action);
+    authDispatch({ type: types.logout });
   };
 
   return (
