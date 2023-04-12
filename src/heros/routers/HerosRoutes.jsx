@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { DcPage, HeroPage, MarvelPage, SearchPage } from '../';
 import { NavBar } from '../../ui';
+import { Footer } from '../../ui/components/Footer';
 
 export const HerosRoutes = () => {
   return (
@@ -17,6 +18,9 @@ export const HerosRoutes = () => {
             
             <Route path="/" element={ <Navigate to="/marvel" /> } />
           </Routes>
+        </div>
+        <div className="text-center">
+          <Footer  />
         </div>
       </div>
     </>

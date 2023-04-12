@@ -317,3 +317,27 @@ html, body {
     padding: 3.5rem 6rem;
   }
 }
+
+/* FOOTER */
+
+.copyright-link {
+  font-weight: 700;
+  color: var(--green);
+  transition: all 0.2s ease-in-out;
+}
+
+.copyright-link:is(:active, :hover) {
+  color: #29d76c;
+}
+
+.social-media {
+  gap: 0.5rem;
+}
+
+.social-media a{
+  font-size: 0.8rem;
+}
+
+.social-media a:not(:last-child) {
+  padding-right: 1rem;
+}

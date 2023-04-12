@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from '../../heros/hooks/useForms';
 import { AuthContext } from '../context/AuthContext';
+import { Footer } from '../../ui/components/Footer';
 
 export const LoginPage = () => {
 
@@ -66,7 +67,8 @@ export const LoginPage = () => {
           </p>
         </form>
         </div>
-        <p><small>©2023 Todos los derechos reservados. Fabio Medina Medina</small></p>
+       <Footer />
+        
       </div>
       <div className="col-12 col-lg-6 order-0 order-lg-1 right-login h-100 d-flex flex-column justify-content-center text-center p-3 p-lg-5 px-5">
         <img src="/assets/heroes-login.png" alt="Heroes DC y Marvel" />
