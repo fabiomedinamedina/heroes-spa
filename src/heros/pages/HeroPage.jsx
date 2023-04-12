@@ -1,26 +1,25 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getHeroById } from '../';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 
 export const HeroPage = () => {
 
   const { id } = useParams();
   const navigate = useNavigate();
-  
   const hero = useMemo( () => getHeroById( id ), [ id ] );
- 
 
   if( !hero ) return <Navigate to="/marvel"/>
   
   const { superhero, publisher , alter_ego, first_appearance, characters } = hero;
 
   const onNavigateBack = () => {
-
-    if( publisher ===  'Marvel Comics'){
-      navigate( '/marvel' );
-    }else if( publisher ===  'DC Comics'){
-      navigate( '/dc' );
-    }
+    
+    navigate( -1 );
+    // if( publisher ===  'Marvel Comics'){
+    //   navigate( '/marvel' );
+    // }else if( publisher ===  'DC Comics'){
+    //   navigate( '/dc' );
+    // }
 
   }
 

@@ -153,7 +153,9 @@ html, body {
 }
 
 .form-search button:hover,
-.btn-login:hover {
+.btn-login:hover,
+.form-search button:first-child:active,
+.btn-login:first-child:active {
   background-color: #29d76c;
   border: 1px solid #29d76c;
   color: #FFF;
