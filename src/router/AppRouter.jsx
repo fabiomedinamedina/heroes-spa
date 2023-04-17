@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { LoginPage } from '../auth';  
 import { HerosRoutes } from '../heros/';
@@ -9,7 +9,7 @@ export const AppRouter = () => {
     <>
       <Routes>
         <Route
-          path='/login'
+          path='login'
           element={
             <PublicRoute>
               <LoginPage />
