@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchPage /> Debería mostrarse correctamente con valores por defecto 1`] = `
+<div>
+  <div
+    class="container container-title-publisher  animate__animated animate__fadeIn"
+  >
+    <div
+      class="content-search p-4 p-lg-5 d-flex justify-content-between align-items-end rounded-4 mb-5"
+      style="background-image: url(assets/titles/background-search.jpg); background-repeat: no-repeat; background-size: cover;"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="row align-items-end"
+        >
+          <div
+            class="col-12 col-lg-6"
+          >
+            <div
+              class="info-publisher"
+            >
+              <img
+                alt="Logos DC y Marvel"
+                class="img-fluid pb-2"
+                src="assets/titles/logos-dc-marvel.svg"
+              />
+              <h1>
+                Buscador de héroes
+              </h1>
+              <p
+                class="mb-0"
+              >
+                Escribe el nombre del héroe que quieres buscar. Recuerda que debes escribir más de 3 caracteres
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-6"
+          >
+            <form
+              class="form-search d-flex flex-column flex-lg-row justify-content-end flex-column pb-2 pt-3 pt-lg-0"
+            >
+              <div
+                class="col-auto mt-0"
+              >
+                <input
+                  autocomplete="off"
+                  class="form-control rounded-pill"
+                  name="searchText"
+                  placeholder="Escribe el nombre de un héroe."
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="col-auto mt-0 mb-0"
+              >
+                <button
+                  class="btn rounded-pill px-4 mt-2 mt-lg-0"
+                  type="submit"
+                >
+                  Buscar Héroes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="row results-heros animate__animated animate__fadeIn g-3"
+    />
+  </div>
+</div>
+`;

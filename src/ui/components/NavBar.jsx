@@ -68,6 +68,7 @@ export const NavBar = () => {
         <button
           className="btn btn-sm btn-outline-light rounded-pill px-3 btn-logout order-2 order-lg-2 mt-3 mt-lg-0"
           onClick={onLogout}
+          aria-label="btn-logout"
         >
           Cerrar Sesión
         </button>

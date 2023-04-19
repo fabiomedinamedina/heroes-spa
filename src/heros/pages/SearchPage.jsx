@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import queryString from 'query-string';
 import { useForm } from '../hooks/useForms';
 import { getHerosByName } from '../helpers';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { HeroItem } from '../components/';
 import { NotFoundHeros } from '../components/NotFoundHeros';
 
